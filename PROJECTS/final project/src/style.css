@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&family=Work+Sans&display=swap');
+
 *
 {
     margin: 0;
     padding: 0;
-    font-family:'Poppins',sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    /*
+    font-family: 'Preahvihear', sans-serif;
+    */
     box-sizing: border-box;
 }
 
@@ -42,7 +48,9 @@
     
 }
 
-/**/
+  /*********************************************************/
+ /**********************ABOUT ME***************************/
+/*********************************************************/
 
 
 .head-container
@@ -64,6 +72,7 @@
 {
     border-radius: 20px;
     padding: 5px;
+    background-color: white;
 }
 
 .head-text
@@ -100,7 +109,7 @@
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: rgb(251, 216, 173);
+    background-color: rgb(255, 255, 255);
 }
 
 .name-text h1
@@ -110,7 +119,7 @@
     margin-left: 200px;
     margin-top: 80px;
 
-    color: rgb(255, 134, 93);
+    color: rgb(70, 18, 0);
 }
 
 .name-text p
@@ -123,8 +132,7 @@
 
 .intro-image
 {
-    margin-left: 150px;
-    background-color:rgb(250, 234, 170); /* Set the desired background color */
+    margin-left: 150px; /* Set the desired background color */
     padding: 30px; 
     border-radius: 50px; /* Add rounded corners if desired */
 }
@@ -134,7 +142,7 @@
 {
 
 
-    background-color:rgb(215, 180, 38); /* Set the desired background color */
+    background-color:rgb(250, 234, 170); /* Set the desired background color */
     padding: 30px; 
     border-radius: 50px; /* Add rounded corners if desired */
 }
@@ -268,6 +276,11 @@
     
 }
 
+/**/
+
+/**/
+
+
 /*              LIST OF RELATED PRODUCTS                    */
 
 
@@ -306,9 +319,12 @@
     text-align: center;
     padding-bottom: 40px;
 
-}
+} 
 
-/*                      ALL PROPERTIES                  */
+
+  /*********************************************************/
+ /*                      ALL PROPERTIES                   */
+/*********************************************************/
 
 
 .ALL-HEADER
@@ -352,4 +368,230 @@
     font-size: 30px;
     padding-bottom: 50px;
     color:rgb(95, 207, 207)
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) 
+{
+
+
+    
+
+    /*ALL PROPERTIES*/
+    .ALL-HEADER {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .all-prop-images img {
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .all-prop-images p {
+        font-size: 16px;
+        padding: 5px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* MAIN CONTAINER */
+    .second-page-container2 {
+        padding: 20px;
+
+        display: inline-block;
+        justify-content: space-evenly;
+        
+     
+    }
+
+    .property1-title {
+        font-size: 20px;
+        padding:10px;
+    }
+
+    .property1-img-container {
+        padding-right: 0px; /* Remove right padding */
+
+    }
+
+    .property1-img-container img {
+        width: 97%;
+        border-radius: 10px;
+    }
+
+    .Property-Info
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .property1-project-details p {
+       
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .prop1-info-elements {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+
+    .prop1-info-elements-container {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .prop1-info-elements-container h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+
+    .prop1-info-elements-container p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .listed-properties img
+    {
+        width: 650px;
+        height:400px;
+       
+        padding-right: 10px;
+        padding-top: 30px;
+        border-radius: 70px;
+        padding: 10px;
+    
+        
+        
+    }
+}
+
+/*ABOUT ME FOR MOBILE DEVICES*/
+
+@media (max-width: 768px) {
+    .second-container {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: rgb(251, 216, 173);
+    }
+
+    .name-text h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 20px auto;
+        color: rgb(255, 134, 93);
+    }
+
+    .name-text p {
+        font-size: 30px;
+        text-align: center;
+        margin: 10px auto;
+        color: darkorange;
+    }
+
+    .intro-image {
+        margin: 20px auto;
+        background-color: rgb(250, 234, 170);
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .intro-image img {
+        max-width: 100%;
+        height: auto;
+        background-color: rgb(215, 180, 38);
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .about-me-section 
+    {
+        padding-bottom: 10px;
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .sect-image
+    {
+       margin: 0px auto;
+       width:50%;
+       padding:40px auto;
+    }
+
+    .text-container p
+    {
+        margin-top: 20px;
+        font-size: 30px;
+        padding :5px;
+    }
+}
+
+/* CONTACT FORM */
+
+.contact-form-left
+{
+    padding: 20px;
+}
+
+.contact-form-left a
+{
+    display: flex;
+    justify-content: space-evenly;
+   padding: 20px;
+
+}
+
+.contact-form-left img
+{
+    width:20px;
+    height: 20px    ;
+}
+
+.contact-form-right form
+{
+    width: 100%;
+}
+
+form input,form textarea
+{
+    width: 100%;
+    border:0 ;
+    outline : none ;
+    background:burlywood;
+    padding: 15px;
+    margin: 15px 0 ;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 18px;
+
+}
+
+button
+{
+    border:0 ;
+    outline : none ;
+    background:rgb(230, 18, 18);
+    padding: 15px;
+    margin: 15px 0 ;
+    color:white;
+    font-size: 18px;
+    border-radius: 18px;
+}
+
+.links-container
+{
+    font-size: 20px;
+    padding : 50px;
+}
+
+.links-container p
+{
+    font-size: 30px;
+    padding-top: 40px;
+    
 }
